@@ -10,13 +10,21 @@ if __name__ == '__main__':
 
 
 
-# 3. "Hello World" enter값 넣어 출력(6003)
-#     print('Hello')
-#     print('World')
+    # 3. "Hello World" enter값 넣어 출력(6003)
+    # print('Hello')
+    # print('World')
 
     # print('Hello\nWorld')
 
 
 
-    # 4. ' 넣어 출력' \
-    print("'" 'Hello' "'")
+    # 4. ' 포함된 문자열 출력'(6004)
+    # print("'" 'Hello' "'")
+
+
+
+     # 5. " 포함된 문자열 출력(6005)
+    print('"' 'Hello World' '"')
+
+
+
