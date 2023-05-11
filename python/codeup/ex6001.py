@@ -6,7 +6,16 @@ if __name__ == '__main__':
 
 
     # 2. "Hello World" 출력(6002)
-    print('Hello World')
+    # print('Hello World')
 
 
 
+# 3. "Hello World" enter값 넣어 출력(6003)
+#     print('Hello')
+#     print('World')
+
+    # print('Hello\nWorld')
+
+
+
+    
