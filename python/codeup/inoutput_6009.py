@@ -64,5 +64,11 @@ if __name__ == '__main__':
 
 
     # 16. 공백을 두어 두 개의 문자를 입력받아 순서를 바꾸어 출력(6016)
-    char_01, char_02 = input().split()
-    print(char_02, char_01)
+    # char_01, char_02 = input().split()
+    # print(char_02, char_01)
+
+
+
+    # 17. 정수, 실수, 문자, 문자열 등 하나만 입력받아 세 번 출력(6017)
+    str = input()
+    print(str, str, str)
