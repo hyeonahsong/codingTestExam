@@ -76,5 +76,11 @@ if __name__ == '__main__':
 
 
     # 18. '시:분' 형태로 입력받아 그대로 출력
-    hour, minute = input().split(':')
-    print(hour, minute, sep = ':')
+    # hour, minute = input().split(':')
+    # print(hour, minute, sep = ':')
+
+
+
+    # 19. '연도.월.일'을 입력받아 '일-월-연도' 형태로 바꾸어 출력(6019)
+    year, month, date = input().split('.')
+    print(date, month, year, sep = '-')
