@@ -44,9 +44,19 @@ if __name__ == '__main__':
 
 
     # 14. 실수를 입력받아 줄 바꾸어 세 번 출력(6014)
-    num = input()
-    num = float(num)
+    # num = input()
+    # num = float(num)
+    #
+    # print(num)
+    # print(num)
+    # print(num)
 
-    print(num)
-    print(num)
-    print(num)
+
+
+    # 15. 공백을 두어 두 개의 정수를 입력받아 줄 바꾼 후 출력(6015)
+    num_01, num_02 = input().split()
+    num_01 = int(num_01)
+    num_02 = int(num_02)
+
+    print(num_01)
+    print(num_02)
