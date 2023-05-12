@@ -22,5 +22,11 @@ if __name__ == '__main__':
     # 27. 10진수를 입력받아 16진수(hexadecimal)로 출력(6027)
     num_01 = input()
     num_01 = int(num_01)
-    print('%x' %num_01)
 
+    # print('%x' %num_01)
+
+
+# 보통 아래처럼 hex() 함수 사용.
+    print(hex(num_01))
+    # OUT
+    # 0xff
