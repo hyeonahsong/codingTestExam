@@ -11,3 +11,4 @@ if __name__ == '__main__':
     # 10.숫자 입력받아 int형ㅡ로 출력
     num = input()
     num = int(num)
+    print(num)
