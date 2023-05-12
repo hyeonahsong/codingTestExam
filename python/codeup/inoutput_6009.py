@@ -82,5 +82,14 @@ if __name__ == '__main__':
 
 
     # 19. '연도.월.일'을 입력받아 '일-월-연도' 형태로 바꾸어 출력(6019)
-    year, month, date = input().split('.')
-    print(date, month, year, sep = '-')
+    # year, month, date = input().split('.')
+    # print(date, month, year, sep = '-')
+
+
+
+    # 20. '-'가 들어간 주민번호를 입력받아 '-'없이 출력(6020)
+# numbers_01, numbers_02 = input().split('-')
+# print(numbers_01, numbers_02, sep = '')
+#
+# 아래 방법도 동일한 결과지만 출제제자가 의도한 건 위 답안이었던 것 같음.
+# print(numbers_01, numbers_02)
