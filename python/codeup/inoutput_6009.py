@@ -70,5 +70,11 @@ if __name__ == '__main__':
 
 
     # 17. 정수, 실수, 문자, 문자열 등 하나만 입력받아 세 번 출력(6017)
-    str = input()
-    print(str, str, str)
+    # str = input()
+    # print(str, str, str)
+
+
+
+    # 18. '시:분' 형태로 입력받아 그대로 출력
+    hour, minute = input().split(':')
+    print(hour, minute, sep = ':')
