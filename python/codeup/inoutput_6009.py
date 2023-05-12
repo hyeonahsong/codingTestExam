@@ -35,8 +35,18 @@ if __name__ == '__main__':
 
 
     # 13. 두 개의 문자를 입력받아 순서와 줄을 바꾸어 출력(6013)
-    char_01 = input()
-    char_02 = input()
+    # char_01 = input()
+    # char_02 = input()
+    #
+    # print(char_02)
+    # print(char_01)
 
-    print(char_02)
-    print(char_01)
+
+
+    # 14. 실수를 입력받아 줄 바꾸어 세 번 출력(6014)
+    num = input()
+    num = float(num)
+
+    print(num)
+    print(num)
+    print(num)
