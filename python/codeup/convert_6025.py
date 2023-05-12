@@ -20,13 +20,25 @@ if __name__ == '__main__':
 
 
     # 27. 10진수를 입력받아 16진수(hexadecimal)로 출력(6027)
-    num_01 = input()
-    num_01 = int(num_01)
-
+    # num_01 = input()
+    # num_01 = int(num_01)
+    #
     # print('%x' %num_01)
 
 
 # 보통 아래처럼 hex() 함수 사용.
-    print(hex(num_01))
+#     print(hex(num_01))
     # OUT
     # 0xff
+
+    # print(hex(num_01)[2:])
+    # OUT
+    # ff
+
+
+
+    # 28.  10진수를 입력받아 16진수 대문자로 출력(6028)
+    num_01 = input()
+    num_01 = int(num_01)
+
+    print('%X' %num_01)
