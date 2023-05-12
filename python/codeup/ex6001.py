@@ -35,4 +35,9 @@ if __name__ == '__main__':
 
 
 # 7.파일 경로 출력 (6007)
-        print('\"C:\\Download\\\'hello\'.py\"')
+#         print('\"C:\\Download\\\'hello\'.py\"')
+
+
+
+    # 8. '\n'이 포함된 코드 문자열 출력
+    print('print(\"Hello\\nWorld\")')
