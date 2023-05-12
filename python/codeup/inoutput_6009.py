@@ -97,10 +97,16 @@ if __name__ == '__main__':
 
 
     # 21. 5개의 문자 혹은 숫자로 이루어진 문자열을 각 문자 별로 분리하여 한 줄씩 출력(6021)
-    str = input()
+    # str = input()
+    #
+    # print(str[0])
+    # print(str[1])
+    # print(str[2])
+    # print(str[3])
+    # print(str[4])
 
-    print(str[0])
-    print(str[1])
-    print(str[2])
-    print(str[3])
-    print(str[4])
+
+
+    # 22. 연월일(6자리)를 입력받아 연, 월, 일을 공백으로 구분하여 출력(2022)
+    date = input()
+    print(date[0:2], date[2:4], date[4:6], sep = ' ')
