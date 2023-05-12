@@ -54,9 +54,15 @@ if __name__ == '__main__':
 
 
     # 15. 공백을 두어 두 개의 정수를 입력받아 줄 바꾼 후 출력(6015)
-    num_01, num_02 = input().split()
-    num_01 = int(num_01)
-    num_02 = int(num_02)
+    # num_01, num_02 = input().split()
+    # num_01 = int(num_01)
+    # num_02 = int(num_02)
+    #
+    # print(num_01)
+    # print(num_02)
 
-    print(num_01)
-    print(num_02)
+
+
+    # 16. 공백을 두어 두 개의 문자를 입력받아 순서를 바꾸어 출력(6016)
+    char_01, char_02 = input().split()
+    print(char_02, char_01)
