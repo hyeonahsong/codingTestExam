@@ -108,5 +108,11 @@ if __name__ == '__main__':
 
 
     # 22. 연월일(6자리)를 입력받아 연, 월, 일을 공백으로 구분하여 출력(2022)
-    date = input()
-    print(date[0:2], date[2:4], date[4:6], sep = ' ')
+    # date = input()
+    # print(date[0:2], date[2:4], date[4:6], sep = ' ')
+
+
+
+    # 23. '시:분:초' 형식으로 시간을 입력받아 분만 출력(6023)
+    time = input()
+    print(time.split(':')[1])
