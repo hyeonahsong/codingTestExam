@@ -22,12 +22,21 @@ if __name__ == '__main__':
 
 
 
-    12. 두 개의 정수를 입력받아 줄 바꾸어 출력
-    num_01 = input()
-    num_02 = input()
+    # 12. 두 개의 정수를 입력받아 줄 바꾸어 출력(6012)
+    # num_01 = input()
+    # num_02 = input()
+    #
+    # num_01 = int(num_01)
+    # num_02 = int(num_02)
+    #
+    # print(num_01)
+    # print(num_02)
 
-    num_01 = int(num_01)
-    num_02 = int(num_02)
 
-    print(num_01)
-    print(num_02)
+
+    # 13. 두 개의 문자를 입력받아 순서와 줄을 바꾸어 출력(6013)
+    char_01 = input()
+    char_02 = input()
+
+    print(char_02)
+    print(char_01)
