@@ -34,3 +34,5 @@ if __name__ == '__main__':
 
 
 
+# 7.파일 경로 출력 (6007)
+        print('\"C:\\Download\\\'hello\'.py\"')
