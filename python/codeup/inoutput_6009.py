@@ -93,3 +93,14 @@ if __name__ == '__main__':
 #
 # 아래 방법도 동일한 결과지만 출제제자가 의도한 건 위 답안이었던 것 같음.
 # print(numbers_01, numbers_02)
+
+
+
+    # 21. 5개의 문자 혹은 숫자로 이루어진 문자열을 각 문자 별로 분리하여 한 줄씩 출력(6021)
+    str = input()
+
+    print(str[0])
+    print(str[1])
+    print(str[2])
+    print(str[3])
+    print(str[4])
