@@ -46,7 +46,13 @@ if __name__ == '__main__':
 
 
     # 29. 16진수를 입력받아 8진수(octal)로 출력(6029)
-    num_01 = input()
+    # num_01 = input()
+    #
+    # num_01 = int(num_01, 16)
+    # print('%o' %num_01)
 
-    num_01 = int(num_01, 16)
-    print('%o' %num_01)
+
+
+    # 30. 영문자 1개를 입력받아 10진수 유니코드(Unicode) 값으로 출력(6030)
+    char = ord(input())
+    print(char)
