@@ -54,5 +54,11 @@ if __name__ == '__main__':
 
 
     # 30. 영문자 1개를 입력받아 10진수 유니코드(Unicode) 값으로 출력(6030)
-    char = ord(input())
-    print(char)
+# char = ord(input())
+# print(char)
+
+
+
+    # 31. 10진 정수 1개를 입력받아 유니코드 문자로 출력(6031)
+num_01 = int(input())
+print(chr(num_01))
