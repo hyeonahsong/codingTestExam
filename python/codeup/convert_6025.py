@@ -60,5 +60,11 @@ if __name__ == '__main__':
 
 
     # 31. 10진 정수 1개를 입력받아 유니코드 문자로 출력(6031)
-num_01 = int(input())
-print(chr(num_01))
+    # num_01 = int(input())
+    # print(chr(num_01))
+
+
+
+    # 32. 입력된 정수의 부호를 바바꾸어 출력(6032)
+    num_01 = int(input())
+    print(-num_01)
