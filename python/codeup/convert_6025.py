@@ -38,7 +38,15 @@ if __name__ == '__main__':
 
 
     # 28.  10진수를 입력받아 16진수 대문자로 출력(6028)
-    num_01 = input()
-    num_01 = int(num_01)
+    # num_01 = input()
+    # num_01 = int(num_01)
+    #
+    # print('%X' %num_01)
 
-    print('%X' %num_01)
+
+
+    # 29. 16진수를 입력받아 8진수(octal)로 출력(6029)
+    num_01 = input()
+
+    num_01 = int(num_01, 16)
+    print('%o' %num_01)
