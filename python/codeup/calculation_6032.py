@@ -32,7 +32,13 @@ if __name__ == '__main__':
 
 
     # 37. 반복 횟수와 문장을 입력받아 여러 번 출력(6037)
-    num = input()
-    sentence = input()
+    # num = input()
+    # sentence = input()
+    #
+    # print(sentence * int(num))
 
-    print(sentence * int(num))
+
+
+    # 38. 정수 2개(a, b)를 입력받아 a를 b번 곱한 거듭제곱을 출력하는 프로그램을 작성해보자.(6038)
+    a, b = input().split()
+    print(int(a) ** int(b))
