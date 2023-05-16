@@ -53,6 +53,12 @@ if __name__ == '__main__':
 
 
     # 40. 정수 2개(a, b) 를 입력받아 a를 b로 나눈 몫을 출력(6040)
+    #
+    # a, b = input().split()
+    # print(int(a) // int(b))
 
+
+
+    # 41. 정수 2개(a, b) 를 입력받아 a를 b로 나눈 나머지를 출력(6041)
     a, b = input().split()
-    print(int(a) // int(b))
+    print(int(a) % int(b))
