@@ -20,5 +20,11 @@ if __name__ == '__main__':
 
 
 # 35. 실수 2개(f1, f2)를 입력받아 곱을 출력(6035)
-f1, f2 = input().split()
-print(float(f1) * float(f2))
+#     f1, f2 = input().split()
+#     print(float(f1) * float(f2))
+
+
+
+    # 36. 단어와 반복 횟수를 입력받아 여러 번 출력(6036)
+    word, num = input().split()
+    print(word * int(num))
