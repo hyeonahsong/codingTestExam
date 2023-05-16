@@ -97,5 +97,11 @@ if __name__ == '__main__':
 
 
     # 46. 정수 1개를 입력받아 2배 곱해 출력(6046)
-    num_01 = input()
-    print(int(num_01) << 1)
+    # num_01 = input()
+    # print(int(num_01) << 1)
+
+
+
+    # 47. 정수 2개(a, b)를 입력받아 a를 2 b 배 곱한 값으로 출력(6047)
+    a, b = input().split()
+    print(int(a) << int(b))
