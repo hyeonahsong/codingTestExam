@@ -103,5 +103,11 @@ if __name__ == '__main__':
 
 
     # 47. 정수 2개(a, b)를 입력받아 a를 2 b 배 곱한 값으로 출력(6047)
-    a, b = input().split()
-    print(int(a) << int(b))
+    # a, b = input().split()
+    # print(int(a) << int(b))
+
+
+
+    # 48. 두 정수(a, b)를 입력받아 a가 b보다 작으면 True 를, a가 b보다 크거나 같으면 False 를 출력(6048)
+a, b = input().split()
+print(int(a) < int( b))
