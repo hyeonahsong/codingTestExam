@@ -60,5 +60,13 @@ if __name__ == '__main__':
 
 
     # 41. 정수 2개(a, b) 를 입력받아 a를 b로 나눈 나머지를 출력(6041)
-    a, b = input().split()
-    print(int(a) % int(b))
+    # a, b = input().split()
+    # print(int(a) % int(b))
+
+
+
+    # 44. 실수 2개(f1, f2)를 입력받아 f1 을 f2 로 나눈 값을 소숫점 넷째자리에서 반올림하여 소숫점 셋째 자리까지 출력(6044
+    f1, f2 = input().split()
+    f3 = float(f1) / float(f2)
+
+    print(format(f3, '.3f'))
