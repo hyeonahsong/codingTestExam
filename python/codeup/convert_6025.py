@@ -80,5 +80,11 @@ if __name__ == '__main__':
 
 
     # 34. 정수 2개(a, b)를 입력받아 a에서 b를 뺀 차를 출력(6034)
-    a, b = input().split()
-    print(int(a) - int(b))
+    # a, b = input().split()
+    # print(int(a) - int(b))
+
+
+
+    # 35. 실수 2개(f1, f2)를 입력받아 곱을 출력(6035)
+    f1, f2 = input().split()
+    print(float(f1) * float(f2))
