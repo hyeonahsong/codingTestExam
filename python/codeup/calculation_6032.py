@@ -121,5 +121,11 @@ if __name__ == '__main__':
 
 
     # 50. 두 정수(a, b)를 입력받아 b의 값이 a의 값 보다 크거나 같으면 True 를, 같지 않으면 False 를 출력
+    # a, b = input().split()
+    # print(int(a) <= int(b))
+
+
+
+    # 51. 두 정수(a, b)를 입력받아 a의 값이 b의 값과 서로 다르면 True 를, 같으면 False 를 출력(6051)
     a, b = input().split()
-    print(int(a) <= int(b))
+    print(int(a) != int(b))
