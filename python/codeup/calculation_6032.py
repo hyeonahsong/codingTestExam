@@ -139,5 +139,11 @@ if __name__ == '__main__':
 
 
     # 53. 정수값이 입력될 때, 그 불 값을 반대로 출력(6053)
-    num_01 = bool(int(input()))
-    print(not num_01)
+    # num_01 = bool(int(input()))
+    # print(not num_01)
+
+
+
+    # 54. 2개의 정수값이 입력될 때, 그 불 값이 모두 True 일 때에만 True 를 출력(6054)
+    num_01, num_02 = input().split()
+    print(bool(int(num_01)) and bool(int(num_02)))
