@@ -1,4 +1,4 @@
-# 6032 ~
+# 6032 ~ 6041, 6043 ~
 
 if __name__ == '__main__':
 
@@ -86,10 +86,16 @@ if __name__ == '__main__':
 
 
     # 45. 정수 3개를 입력받아 합과 평균을 출력(6045)
-    num_01, num_02, num_03 = input().split()
-    num_list = [int(num_01), int(num_02), int(num_03)]
+    # num_01, num_02, num_03 = input().split()
+    # num_list = [int(num_01), int(num_02), int(num_03)]
+    #
+    # sum_val = sum(num_list)
+    # avg_val = sum_val / len(num_list)
+    #
+    # print(sum_val, format(avg_val, '.2f'))
 
-    sum_val = sum(num_list)
-    avg_val = sum_val / len(num_list)
 
-    print(sum_val, format(avg_val, '.2f'))
+
+    # 46. 정수 1개를 입력받아 2배 곱해 출력(6046)
+    num_01 = input()
+    print(int(num_01) << 1)
