@@ -74,11 +74,22 @@ if __name__ == '__main__':
 
 
     # 44. 정수 2개(a, b)를 입력받아 합, 차, 곱, 몫, 나머지, 나눈 값을 자동으로 계산 단, b는 0이 아니다.(6044)
-    a, b = input().split()
+    # a, b = input().split()
+    #
+    # print(int(a) + int(b))
+    # print(int(a) - int(b))
+    # print(int(a) * int(b))
+    # print(int(a) // int(b))
+    # print(int(a) % int(b))
+    # print(format(int(a) / int(b), '.2f'))
 
-    print(int(a) + int(b))
-    print(int(a) - int(b))
-    print(int(a) * int(b))
-    print(int(a) // int(b))
-    print(int(a) % int(b))
-    print(format(int(a) / int(b), '.2f'))
+
+
+    # 45. 정수 3개를 입력받아 합과 평균을 출력(6045)
+    num_01, num_02, num_03 = input().split()
+    num_list = [int(num_01), int(num_02), int(num_03)]
+
+    sum_val = sum(num_list)
+    avg_val = sum_val / len(num_list)
+
+    print(sum_val, format(avg_val, '.2f'))
