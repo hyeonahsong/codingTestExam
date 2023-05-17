@@ -205,8 +205,17 @@ if __name__ == '__main__':
 
 
     # 63. 입력된 두 정수(a, b) 중 큰 값을 출력 단, 삼항연산자를 사용(6063)
-    a, b = input().split()
-    a = int(a)
-    b = int(b)
+    # a, b = input().split()
+    # a = int(a)
+    # b = int(b)
+    #
+    # print(a if a >= b else b)
 
-    print(a if a >= b else b)
+
+
+    # 64. 입력된 세 정수 a, b, c 중 가장 작은 값을 출력 단, 삼항연산자 사용(6064)
+    a, b, c = input().split()
+    a, b, c = int(a), int(b), int(c)
+
+    print((a if a < b else b) if((a if a < b else b) < c) else c)
+
