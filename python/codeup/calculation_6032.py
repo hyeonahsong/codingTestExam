@@ -181,5 +181,11 @@ if __name__ == '__main__':
 
 
     # 59.입력 된 정수를 비트단위로 참/거짓을 바꾼 후 정수로 출력(6059)
-    num_01 = int(input())
-    print(~num_01)
+    # num_01 = int(input())
+    # print(~num_01)
+
+
+
+    # 60. 입력된 정수 두 개를 비트단위로 and 연산한 후 그 결과를 정수로 출력!(6060)
+    num_01, num_02 = input().split()
+    print(int(num_01) & int(num_02))
