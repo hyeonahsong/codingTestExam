@@ -32,9 +32,19 @@ if __name__ == '__main__':
 
 
     # 74. 영문 소문자(a ~ z) 1개가 입력되었을 때, a부터 그 문자까지의 알파벳을 순서대로 출력(6074)
-    char_01 = ord(input())
-    a_unicode = ord('a')
+    # char_01 = ord(input())
+    # a_unicode = ord('a')
+    #
+    # while a_unicode <= char_01:
+    #     print(chr(a_unicode), end = ' ')
+    #     a_unicode += 1
 
-    while a_unicode <= char_01:
-        print(chr(a_unicode), end = ' ')
-        a_unicode += 1
+
+
+    # 75. 정수(0 ~ 100) 1개를 입력받아 0부터 그 수까지 순서대로 출력(6075)
+    num_01 = int(input())
+    num_02 = 0
+
+    while num_02 <= num_01:
+        print(num_02)
+        num_02 += 1
