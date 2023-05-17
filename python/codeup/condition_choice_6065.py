@@ -74,19 +74,36 @@ if __name__ == '__main__':
 
 
     # 69. 문자를 하나 입력받아 A : best!!!, B : good!!, C : run!, D : slowly~, 나머지 문자들 : what? 출력(6069)
-    char_01 = input()
+    # char_01 = input()
+    #
+    # if char_01 == 'A':
+    #     print('best!!!')
+    #
+    # if char_01 == 'B':
+    #     print('good!!')
+    #
+    # if char_01 == 'C' :
+    #     print('run!')
+    #
+    # if char_01 == 'D' :
+    #     print('slowly~')
+    #
+    # if (char_01 != 'A') and (char_01 != 'B') and (char_01 != 'C') and (char_01 != 'D'):
+    #     print('what?')
 
-    if char_01 == 'A':
-        print('best!!!')
 
-    if char_01 == 'B':
-        print('good!!')
 
-    if char_01 == 'C' :
-        print('run!')
+    # 6070. 월이 입력될 때 12, 1, 2 : winter, 3, 4, 5 : spring, 6, 7, 8 : summer, 9, 10, 11 : fall 출력(6070)
+    month = int(input())
 
-    if char_01 == 'D' :
-        print('slowly~')
+    if ( month == 12) or ( month == 1) or ( month == 2):
+        print('winter')
 
-    if (char_01 != 'A') and (char_01 != 'B') and (char_01 != 'C') and (char_01 != 'D'):
-        print('what?')
+    if ( month == 3) or ( month == 4) or ( month == 5):
+        print('spring')
+
+    if ( month == 6) or ( month == 7) or ( month == 8):\
+        print('summer')
+
+    if ( month == 9) or ( month == 10)or (month == 11):
+        print('fall')
