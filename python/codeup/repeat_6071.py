@@ -23,8 +23,18 @@ if __name__ == '__main__':
 
 
     # 73. 정수 하나가 입력되었을 때 0이될때까지 카운트다운 하여 출력(6073)
-    cnt = int(input()) -1
+    # cnt = int(input()) -1
+    #
+    # while cnt != -1:
+    #     print(cnt)
+    #     cnt -= 1
 
-    while cnt != -1:
-        print(cnt)
-        cnt -= 1
+
+
+    # 74. 영문 소문자(a ~ z) 1개가 입력되었을 때, a부터 그 문자까지의 알파벳을 순서대로 출력(6074)
+    char_01 = ord(input())
+    a_unicode = ord('a')
+
+    while a_unicode <= char_01:
+        print(chr(a_unicode), end = ' ')
+        a_unicode += 1
