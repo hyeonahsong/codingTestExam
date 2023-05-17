@@ -42,9 +42,17 @@ if __name__ == '__main__':
 
 
     # 75. 정수(0 ~ 100) 1개를 입력받아 0부터 그 수까지 순서대로 출력(6075)
-    num_01 = int(input())
-    num_02 = 0
+    # num_01 = int(input())
+    # num_02 = 0
+    #
+    # while num_02 <= num_01:
+    #     print(num_02)
+    #     num_02 += 1
 
-    while num_02 <= num_01:
-        print(num_02)
-        num_02 += 1
+
+
+    # 76. 정수(0 ~ 100) 1개를 입력받아 0부터 그 수까지 순서대로 출력(6076)
+    num_01 = int(input())
+
+    for i in range(0, num_01 + 1):
+        print(i)
