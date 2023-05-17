@@ -39,17 +39,34 @@ if __name__ == '__main__':
 
 #     67. 0이 아닌 정수 1개가 입력되었을 때 음수이면서 짝수이면, A, 음수이면서 홀수이면, B, 양수이면서 짝수이면, C, 양수이면서 홀수이면, D
 # 를 출력(6067)
-    num_01 = input()
-    num_01 = int(num_01)
+#     num_01 = input()
+#     num_01 = int(num_01)
+#
+#     if (num_01 < 0) and (num_01 % 2 == 0):
+#         print('A')
+#
+#     if (num_01 < 0 )and (num_01 % 2 != 0):
+#         print('B')
+#
+#     if (num_01 > 0) and (num_01 % 2 == 0):
+#         print('C')
+#
+#     if (num_01 > 0) and (num_01 % 2 != 0):
+#         print('D')
 
-    if (num_01 < 0) and (num_01 % 2 == 0):
+
+
+# 68. 점수(정수, 0 ~ 100)를 입력받아 90 ~ 100 : A, 70 ~ 89 : B, 40 ~ 69 : C, 0 ~ 39 : D를 출력(6068)
+    num_01 = int(input())
+
+    if(90 <= num_01) and (num_01 <= 100):
         print('A')
 
-    if (num_01 < 0 )and (num_01 % 2 != 0):
+    if(70 <= num_01) and (num_01 <= 89):
         print('B')
 
-    if (num_01 > 0) and (num_01 % 2 == 0):
+    if (40 <= num_01) and (num_01 <= 69):
         print('C')
 
-    if (num_01 > 0) and (num_01 % 2 != 0):
+    if(0 <= num_01) and (num_01 <= 39):
         print('D')
