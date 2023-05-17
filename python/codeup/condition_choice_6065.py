@@ -57,16 +57,36 @@ if __name__ == '__main__':
 
 
 # 68. 점수(정수, 0 ~ 100)를 입력받아 90 ~ 100 : A, 70 ~ 89 : B, 40 ~ 69 : C, 0 ~ 39 : D를 출력(6068)
-    num_01 = int(input())
+#     num_01 = int(input())
+#
+#     if(90 <= num_01) and (num_01 <= 100):
+#         print('A')
+#
+#     if(70 <= num_01) and (num_01 <= 89):
+#         print('B')
+#
+#     if (40 <= num_01) and (num_01 <= 69):
+#         print('C')
+#
+#     if(0 <= num_01) and (num_01 <= 39):
+#         print('D')
 
-    if(90 <= num_01) and (num_01 <= 100):
-        print('A')
 
-    if(70 <= num_01) and (num_01 <= 89):
-        print('B')
 
-    if (40 <= num_01) and (num_01 <= 69):
-        print('C')
+    # 69. 문자를 하나 입력받아 A : best!!!, B : good!!, C : run!, D : slowly~, 나머지 문자들 : what? 출력(6069)
+    char_01 = input()
 
-    if(0 <= num_01) and (num_01 <= 39):
-        print('D')
+    if char_01 == 'A':
+        print('best!!!')
+
+    if char_01 == 'B':
+        print('good!!')
+
+    if char_01 == 'C' :
+        print('run!')
+
+    if char_01 == 'D' :
+        print('slowly~')
+
+    if (char_01 != 'A') and (char_01 != 'B') and (char_01 != 'C') and (char_01 != 'D'):
+        print('what?')
