@@ -175,5 +175,11 @@ if __name__ == '__main__':
 
 
     # 58. 2개의 정수값이 입력될 때, 그 불 값(True/False) 이 모두 False 일 때에만 True 를 출력(6058)
-    num_01, num_02 = input().split()
-    print(not(bool(int(num_01))) and not(bool(int(num_02))))
+    # num_01, num_02 = input().split()
+    # print(not(bool(int(num_01))) and not(bool(int(num_02))))
+
+
+
+    # 59.입력 된 정수를 비트단위로 참/거짓을 바꾼 후 정수로 출력(6059)
+    num_01 = int(input())
+    print(~num_01)
