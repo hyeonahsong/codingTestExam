@@ -14,8 +14,17 @@ if __name__ == '__main__':
 
 
     # 72.정수(1 ~ 100) 1개가 입력되었을 때 카운트다운을 출력(6072)
-    num_01 = int(input())
+    # num_01 = int(input())
+    #
+    # while num_01 != 0:
+    #     print(num_01)
+    #     num_01 -= 1
 
-    while num_01 != 0:
-        print(num_01)
-        num_01 -= 1
+
+
+    # 73. 정수 하나가 입력되었을 때 0이될때까지 카운트다운 하여 출력(6073)
+    cnt = int(input()) -1
+
+    while cnt != -1:
+        print(cnt)
+        cnt -= 1
