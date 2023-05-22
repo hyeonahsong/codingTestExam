@@ -54,11 +54,26 @@ if __name__ == '__main__':
 
 
 # 82. 1 부터 그 수까지 순서대로 공백을 두고 수를 출력하는데, 3 또는 6 또는 9가 포함 되어있는 수인 경우, 그 수 대신 영문 대문자 X 를 출력한다. (6082)
-    num_01 = int(input())
+#     num_01 = int(input())
+#
+#     for i in range(1, num_01 + 1):
+#         if (i % 10 == 3) or (i % 10 == 6) or (i % 10 == 9):
+#             print('X', end = ' ')
+#
+#         else:
+#             print(i, end = ' ')
 
-    for i in range(1, num_01 + 1):
-        if (i % 10 == 3) or (i % 10 == 6) or (i % 10 == 9):
-            print('X', end = ' ')
 
-        else:
-            print(i, end = ' ')
+
+
+# 83. 빨강(r), 초록(g), 파랑(b) 각 빛의 가짓수가 주어질 때,
+    주어진 rgb 빛들을 섞어 만들 수 있는 모든 경우의 조합(r g b)과 만들 수 있는 색의 가짓 수를 계산?(6083)
+    r, g, b = input().split()
+    r, g, b = int(r), int(g), int(b)
+
+    for i in range(0, r):
+        for j in range(0, g):
+            for k in range(0, b):
+                print(i, j, k)
+
+    print(r * g * b)
