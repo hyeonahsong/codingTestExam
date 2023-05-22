@@ -36,9 +36,17 @@ if __name__ == '__main__':
 
 #     80. 1부터 n까지, 1부터 m까지 숫자가 적힌 서로 다른 주사위 2개를 던졌을 때,
 # 나올 수 있는 모든 경우를 출력(6080)
-    n ,m = input().split()
-    n , m = int(n), int(m)
+#     n ,m = input().split()
+#     n , m = int(n), int(m)
+#
+#     for i in range(1, n + 1):
+#         for j in range(1, m + 1):
+#             print(i, j)
 
-    for i in range(1, n + 1):
-        for j in range(1, m + 1):
-            print(i, j)
+
+
+# 81. A, B, C, D, E, F 중 하나가 입력될 때, 1부터 F까지 곱한 16진수 구구단의 내용을 출력!(6081)
+    num_01 = int(input(), 16)
+
+    for i in range(1,16):
+        print('%X' % num_01, '*%X' % i, '=%X' % (num_01 * i), sep='')
