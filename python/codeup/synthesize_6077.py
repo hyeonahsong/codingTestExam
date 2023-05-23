@@ -67,13 +67,32 @@ if __name__ == '__main__':
 
 
 # 83. 빨강(r), 초록(g), 파랑(b) 각 빛의 가짓수가 주어질 때,
-    주어진 rgb 빛들을 섞어 만들 수 있는 모든 경우의 조합(r g b)과 만들 수 있는 색의 가짓 수를 계산?(6083)
-    r, g, b = input().split()
-    r, g, b = int(r), int(g), int(b)
+#     주어진 rgb 빛들을 섞어 만들 수 있는 모든 경우의 조합(r g b)과 만들 수 있는 색의 가짓 수를 계산?(6083)
+    # r, g, b = input().split()
+    # r, g, b = int(r), int(g), int(b)
+    #
+    # for i in range(0, r):
+    #     for j in range(0, g):
+    #         for k in range(0, b):
+    #             print(i, j, k)
+    #
+    # print(r * g * b)
 
-    for i in range(0, r):
-        for j in range(0, g):
-            for k in range(0, b):
-                print(i, j, k)
 
-    print(r * g * b)
+
+# 84.1초 동안 마이크로 소리강약을 체크하는 횟수를 h
+# (헤르쯔, Hz 는 1초에 몇 번? 체크하는가를 의미한다.)
+#
+# 한 번 체크한 값을 저장할 때 사용하는 비트수를 b
+# (2비트를 사용하면 0 또는 1 두 가지, 16비트를 사용하면 65536가지..)
+#
+# 좌우 등 소리를 저장할 트랙 개수인 채널 개수를 c
+# (모노는 1개, 스테레오는 2개의 트랙으로 저장함을 의미한다.)
+#
+# 녹음할 시간(초) s가 주어질 때, 필요한 저장 용량을 계산!(6084)
+
+    h, b, c, s = input().split()
+    h, b, c, s = int(h), int(b), int(c), int(s)
+
+    print(round(h * b * c * s / 8 / 1024 / 1024, 1), "MB")
+
