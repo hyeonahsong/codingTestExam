@@ -32,10 +32,18 @@ if __name__ == '__main__':
 
 
     # 94. 출석 번호를 n번 무작위로 불렀을 때, 가장 빠른 번호를 출력(6094)
-    n = int(input())
-    num = input().split()
+    # n = int(input())
+    # num = input().split()
+    #
+    # for i in range(n):
+    #     num[i] = int(num[i])
+    #
+    # print(min(num))
 
-    for i in range(n):
-        num[i] = int(num[i])
+
+
+    # 6094번 리팩토링
+    n = int ( input ())
+    num = map ( int , input ().split())
 
     print(min(num))
