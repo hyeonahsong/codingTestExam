@@ -107,16 +107,31 @@ if __name__ == '__main__':
 
 
 # 86. 1, 2, 3 ... 을 순서대로 계속 더해 합을 만드는데, 그 합이 입력한 정수보다 작을 동안만 계속 더하는 프로그램을 작성(6086)
+#     num_01 = int(input())
+#     s = 0
+#     i = 1
+#
+#     while True:
+#         s = s + i
+#
+#         if num_01 <= s:
+#             print(s)
+#             break
+#
+#         else:
+#             i += 1
+
+
+
+# 6086번 리팩토링 코드
     num_01 = int(input())
+    i = 0
     s = 0
-    i = 1
 
     while True:
-        s = s + i
+        i += 1
+        s += i
 
         if num_01 <= s:
             print(s)
             break
-
-        else:
-            i += 1
