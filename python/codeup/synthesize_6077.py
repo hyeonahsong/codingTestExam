@@ -90,9 +90,15 @@ if __name__ == '__main__':
 # (모노는 1개, 스테레오는 2개의 트랙으로 저장함을 의미한다.)
 #
 # 녹음할 시간(초) s가 주어질 때, 필요한 저장 용량을 계산!(6084)
+    # h, b, c, s = input().split()
+    # h, b, c, s = int(h), int(b), int(c), int(s)
+    #
+    # print(round(h * b * c * s / 8 / 1024 / 1024, 1), "MB")
 
-    h, b, c, s = input().split()
-    h, b, c, s = int(h), int(b), int(c), int(s)
 
-    print(round(h * b * c * s / 8 / 1024 / 1024, 1), "MB")
 
+# 85. 이미지의 가로 해상도 w, 세로 해상도 h, 한 픽셀을 저장하기 위한 비트 b 가 주어질 때, 압축하지 않고 저장하기 위해 필요한 저장 용량을 계산!(6085)
+    w, h, b = input().split()
+    res = int(w) * int(h) * int(b) / 1024 / 1024 / 8
+
+    print('%.2f' % res, "MB")
