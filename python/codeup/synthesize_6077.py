@@ -1,4 +1,4 @@
-# 6077 ~
+# 6077 ~6091
 
 if __name__ == '__main__':
     # 77. 정수(1 ~ 100) 1개를 입력받아 1부터 그 수까지 짝수의 합을 출력(7077)
@@ -215,12 +215,12 @@ if __name__ == '__main__':
 
 
     # 91. 같은 날 동시에 가입한 3명의 사람들이 온라인 채점시스템에 들어와 문제를 푸는 날짜가 매우 규칙적이라고 할 때, 다시 모두 함께 문제를 풀게 되는 그날은 언제일까??(6091)
-    a, b, c = map(int, input().split())
-    date = 0
-
-    while True:
-        date += 1
-
-        if i % a == 0 and i % b == 0 and i % c == 0:
-            print (date)
-            break
+    # a, b, c = map(int, input().split())
+    # date = 0
+    #
+    # while True:
+    #     date += 1
+    #
+    #     if i % a == 0 and i % b == 0 and i % c == 0:
+    #         print (date)
+    #         break
