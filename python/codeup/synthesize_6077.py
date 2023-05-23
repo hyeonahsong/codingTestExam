@@ -139,11 +139,30 @@ if __name__ == '__main__':
 
 
     # 87. 1부터 입력한 정수까지 1씩 증가시켜 출력하는 프로그램을 작성하되, 3의 배수인 경우는 출력하지 않도록 만들어보자. (6087)
-    num_01 = int(input())
+    # num_01 = int(input())
+    #
+    # for i in range(1, num_01 + 1):
+    #     if i % 3 == 0:
+    #         pass
+    #
+    #     else:
+    #         print(i, end = ' ')
 
-    for i in range(1, num_01 + 1):
-        if i % 3 == 0:
-            pass
+# 문제 예시에서는 pass가 아닌 continue 사용했음.
+
+
+
+# 88. 시작 값(a), 등차d), 몇 번째인지를 나타내는 정수(n)가 입력될 때 n번째 수를 출력하는 프로그램을 만들어보자. (6088)
+    a, d, n = input().split()
+    a, d, n = int(a), int(d), int(n)
+    i = 1
+    s = a
+
+    while True:
+        if i == n:
+            print(s)
+            break
 
         else:
-            print(i, end = ' ')
+            i += 1
+            s += d
