@@ -22,9 +22,20 @@ if __name__ == '__main__':
 
 
     # 93. 출석 번호를 n번 무작위로 불렀을 때, 부른 번호를 거꾸로 출력해 보자. (6093)
+    # n = int(input())
+    # num = input().split()
+    # num_list = num
+    #
+    # for i in range(n-1, -1, -1):
+    #     print(num_list[i], end = ' ')
+
+
+
+    # 94. 출석 번호를 n번 무작위로 불렀을 때, 가장 빠른 번호를 출력(6094)
     n = int(input())
     num = input().split()
-    num_list = num
 
-    for i in range(n-1, -1, -1):
-        print(num_list[i], end = ' ')
+    for i in range(n):
+        num[i] = int(num[i])
+
+    print(min(num))
