@@ -153,16 +153,39 @@ if __name__ == '__main__':
 
 
 # 88. 시작 값(a), 등차d), 몇 번째인지를 나타내는 정수(n)가 입력될 때 n번째 수를 출력하는 프로그램을 만들어보자. (6088)
+#     a, d, n = input().split()
+#     a, d, n = int(a), int(d), int(n)
+#     i = 1
+#     s = a
+#
+#     while True:
+#         if i == n:
+#             print(s)
+#             break
+#
+#         else:
+#             i += 1
+#             s += d
+
+
+
+    # 6088번 리팩토링 코드 - 등차수열 공식 활용
+#     a, d, n = map(int, input().split())
+#     print(a + d * (n - 1))
+
+
+
+    # 6088번 리리팩토링 드 - 모범 답안
     a, d, n = input().split()
-    a, d, n = int(a), int(d), int(n)
-    i = 1
+
+    a = int(a)
+    d = int(d)
+    n = int(n)
+
     s = a
+    for i in range(1, n):
+        s += d
 
-    while True:
-        if i == n:
-            print(s)
-            break
+    print(s)
 
-        else:
-            i += 1
-            s += d
+# 원래 for문 인자로 2, n + 1 넣어줬는데 굳이 그럴 필요가 없어보여서 내가 1로 수정함.
