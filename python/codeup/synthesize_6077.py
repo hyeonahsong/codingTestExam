@@ -204,10 +204,23 @@ if __name__ == '__main__':
 
 
     # 90. 시작 값(a), 곱할 값(m), 더할 값(d), 몇 번째인지를 나타내는 정수(n)가 입력될 때, n번째 수를 출력하는 프로그램을 만들어보자. (6090)
-    a, m, d, n = map(int, input().split())
-    t = a
+    # a, m, d, n = map(int, input().split())
+    # t = a
+    #
+    # for i in range(1, n):
+    #     t = t * m + d
+    #
+    # print(t)
 
-    for i in range(1, n):
-        t = t * m + d
 
-    print(t)
+
+    # 91. 같은 날 동시에 가입한 3명의 사람들이 온라인 채점시스템에 들어와 문제를 푸는 날짜가 매우 규칙적이라고 할 때, 다시 모두 함께 문제를 풀게 되는 그날은 언제일까??(6091)
+    a, b, c = map(int, input().split())
+    date = 0
+
+    while True:
+        date += 1
+
+        if i % a == 0 and i % b == 0 and i % c == 0:
+            print (date)
+            break
