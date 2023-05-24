@@ -43,7 +43,32 @@ if __name__ == '__main__':
 
 
     # 6094번 리팩토링
-    n = int ( input ())
-    num = map ( int , input ().split())
+    # n = int ( input ())
+    # num = map ( int , input ().split())
+    #
+    # print(min(num))
 
-    print(min(num))
+
+
+    # 95. 바둑판(19 * 19)에 n개의 흰 돌을 놓는다고 할 때, n개의 흰 돌이 놓인 위치를 출력하는 프로그램을 작성해보자.(6095)
+    n = int(input())
+    list_01 = []
+
+
+    for i in range(20):
+        list_01.append([])
+        for j in range(20):
+            list_01[i].append(0)
+
+
+    for i in range(n):
+        x, y = map(int, input().split())
+        list_01[x][y] = 1
+
+
+    for i in range(1, 20):
+        for j in range(1, 20):
+            print(list_01[i][j], end = ' ')
+        print()
+
+
