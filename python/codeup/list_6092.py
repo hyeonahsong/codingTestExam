@@ -82,6 +82,7 @@ if __name__ == '__main__':
 
 
     # 96.바둑판(19 * 19)에 흰 돌(1) 또는 검정 돌(0)이 모두 꽉 채워져 놓여있을 때, n개의 좌표를 입력받아 십(+)자 뒤집기한 결과를 출력??(6096)
+    # 2차원 배열 생성 후 0 넣기
     badukpan = []
 
     for i in range(19):
@@ -90,28 +91,32 @@ if __name__ == '__main__':
             badukpan[i].append(0)
 
 
+
+    # 입력받은 값을 리스트 형태로 저장
     for i in range(19):
-        badukpan[i] = list(map(int, input().split()))
+        badukpan[i] = list( map( int, input().split()))
 
 
 
+    # 횟수 입력받아 그만큼 좌표 입력 후 뒤집기
     n = int(input())
+
     for i in range(n):
-        x, y = map(int, input().split())
-        for j in range(1, 20):
-            if badukpan[x][j] == 0:
-                badukpan[x][j] = 1
-
+        x, y = map( int, input().split())
+        for j in range (19):
+            if badukpan[x - 1][j] == 0:
+                badukpan[x - 1][j] = 1
             else:
-                badukpan[x][j] = 0
+                badukpan[x - 1][j] = 0
 
-            if badukpan[j][y] == 0:
-                badukpan[j][y] = 1
+            if  badukpan[j][y - 1] == 0:
+                badukpan[j][y - 1] = 1
+            else :
+                badukpan[j][y - 1] = 0
 
-            else:
-                badukpan[j][y] = 0
 
 
+    # 출력
     for i in range(19):
         for j in range(19):
             print(badukpan[i][j], end = ' ')
