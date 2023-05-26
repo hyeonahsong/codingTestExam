@@ -82,43 +82,80 @@ if __name__ == '__main__':
 
 
     # 96.바둑판(19 * 19)에 흰 돌(1) 또는 검정 돌(0)이 모두 꽉 채워져 놓여있을 때, n개의 좌표를 입력받아 십(+)자 뒤집기한 결과를 출력??(6096)
-    # 2차원 배열 생성 후 0 넣기
-    badukpan = []
+#         # 2차원 배열 생성 후 0 넣기
+#     badukpan = []
+#
+#     for i in range(19):
+#         badukpan.append([])
+#         for j in range(19):
+#             badukpan[i].append(0)
+#
+#
+#
+#     # 입력받은 값을 리스트 형태로 저장
+#     for i in range(19):
+#         badukpan[i] = list( map( int, input().split()))
+#
+#
+#
+#     # 횟수 입력받아 그만큼 좌표 입력 후 뒤집기
+#     n = int(input())
+#
+#     for i in range(n):
+#         x, y = map( int, input().split())
+#         for j in range (19):
+#             if badukpan[x - 1][j] == 0:
+#                 badukpan[x - 1][j] = 1
+#             else:
+#                 badukpan[x - 1][j] = 0
+#
+#             if  badukpan[j][y - 1] == 0:
+#                 badukpan[j][y - 1] = 1
+#             else :
+#                 badukpan[j][y - 1] = 0
+#
+# # badukpan은 배열로 만들어져있으니 입력받은 x, y 좌표에 -1을 해서 위치를 잡는 게 맞음!
+#
+#
+#
+#     # 출력
+#     for i in range(19):
+#         for j in range(19):
+#             print(badukpan[i][j], end = ' ')
+#         print()
 
-    for i in range(19):
-        badukpan.append([])
-        for j in range(19):
-            badukpan[i].append(0)
 
 
 
-    # 입력받은 값을 리스트 형태로 저장
-    for i in range(19):
-        badukpan[i] = list( map( int, input().split()))
+
+    # 97. 격자판의 세로(h), 가로(w), 막대의 개수(n), 각 막대의 길이(l), 막대를 놓는 방향(d:가로는 0, 세로는 1)과
+# 막대를 놓는 막대의 가장 왼쪽 또는 위쪽의 위치(x, y)가 주어질 때, 격자판을 채운 막대의 모양을 출력(6097)
+    h, w = map(int, input().split())
+
+    # 0이 들어간 판 배열 생성
+    pan_list = []
+    for i in range(h):
+        pan_list.append([])
+        for j in range(w):
+            pan_list[i].append(0)
 
 
 
-    # 횟수 입력받아 그만큼 좌표 입력 후 뒤집기
+    # 입력받은 정보에 맞게 막대 부분 1로 할당해주기
     n = int(input())
 
     for i in range(n):
-        x, y = map( int, input().split())
-        for j in range (19):
-            if badukpan[x - 1][j] == 0:
-                badukpan[x - 1][j] = 1
+        l, d, x, y = map(int, input().split())
+        for j in range(l):
+            if d == 0:
+                pan_list[x - 1][y - 1 + j] = 1
             else:
-                badukpan[x - 1][j] = 0
-
-            if  badukpan[j][y - 1] == 0:
-                badukpan[j][y - 1] = 1
-            else :
-                badukpan[j][y - 1] = 0
+                pan_list[x - 1 + j][y - 1] = 1
 
 
 
     # 출력
-    for i in range(19):
-        for j in range(19):
-            print(badukpan[i][j], end = ' ')
+    for i in range(h):
+        for j in range(w):
+            print(pan_list[i][j], end = ' ')
         print()
-
