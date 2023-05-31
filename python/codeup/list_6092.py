@@ -211,3 +211,9 @@ if __name__ == '__main__':
         for j in range(10):
             print(ants[i][j], end = ' ')
         print()
+
+
+
+        # 개미굴 형태 만들고 상황 입력받아 넣는 코드를 아래 코드로 리팩토링
+    for i in range(10):
+        ants.append(list(map(int, input().split())))
