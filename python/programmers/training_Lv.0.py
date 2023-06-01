@@ -51,9 +51,14 @@
 
 
 # 6. 문자열로 변환
-def solution(n):
-    return str(n)
+# def solution(n):
+#     return str(n)
 
+
+
+# 7. 소문자로 변환
+def solution(myString):
+    return myString.lower()
 
 
 
@@ -80,4 +85,7 @@ if __name__ == '__main__':
     # print(solution('str'))
 
     # 6번
-    print(solution(3))
+    # print(solution(3))
+
+    # 7번
+    print(solution('ABC'))
