@@ -16,8 +16,19 @@
 
 
 # 2. 부분문자열
-def solution(str1, str2):
-    if str1 in str2:
+# def solution(str1, str2):
+#     if str1 in str2:
+#         return 1
+#
+#     else:
+#         return 0
+
+
+
+
+# 3. n의 배수
+def solution(num, n):
+    if num % n == 0:
         return 1
 
     else:
@@ -33,5 +44,9 @@ if __name__ == '__main__':
     # print(solution("123456789"))
 
     # 2번
-    print(solution("abc", "aabcc"))
-    print(solution("tbt", "tbbttb"))
+    # print(solution("abc", "aabcc"))
+    # print(solution("tbt", "tbbttb"))
+
+    # 3번
+    print(solution(10, 2))
+    print(solution(10, 3))
