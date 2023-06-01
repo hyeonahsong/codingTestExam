@@ -27,12 +27,20 @@
 
 
 # 3. n의 배수
-def solution(num, n):
-    if num % n == 0:
-        return 1
+# def solution(num, n):
+#     if num % n == 0:
+#         return 1
+#
+#     else:
+#         return 0
 
-    else:
-        return 0
+
+
+
+
+# 4. 정수 찾기(조건문 활용)
+def solution(num_list, n):
+    return int(n in num_list)
 
 
 
@@ -48,5 +56,10 @@ if __name__ == '__main__':
     # print(solution("tbt", "tbbttb"))
 
     # 3번
-    print(solution(10, 2))
-    print(solution(10, 3))
+    # print(solution(10, 2))
+    # print(solution(10, 3))
+
+    # 4번
+    list_01 = [1, 3, 5]
+    print(solution(list_01, 3))
+    print(solution(list_01, 2))
