@@ -50,6 +50,10 @@
 
 
 
+# 6. 문자열로 변환
+def solution(n):
+    return str(n)
+
 
 
 
@@ -73,4 +77,7 @@ if __name__ == '__main__':
     # print(solution(list_01, 2))
 
     # 5번
-    print(solution('str'))
+    # print(solution('str'))
+
+    # 6번
+    print(solution(3))
