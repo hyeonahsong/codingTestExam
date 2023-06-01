@@ -39,8 +39,16 @@
 
 
 # 4. 정수 찾기(조건문 활용)
-def solution(num_list, n):
-    return int(n in num_list)
+# def solution(num_list, n):
+#     return int(n in num_list)
+
+
+
+# 5. 대문자로 바꾸기
+# def solution(myString):
+#     return myString.upper()
+
+
 
 
 
@@ -61,5 +69,8 @@ if __name__ == '__main__':
 
     # 4번
     list_01 = [1, 3, 5]
-    print(solution(list_01, 3))
-    print(solution(list_01, 2))
+    # print(solution(list_01, 3))
+    # print(solution(list_01, 2))
+
+    # 5번
+    print(solution('str'))
