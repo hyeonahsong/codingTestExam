@@ -71,16 +71,29 @@
 
 
 # 8. 길이에 따른 연산(배열)
+# def solution(num_list):
+#     if len(num_list) >= 11:
+#         return sum(num_list)
+#
+#     else:
+#         mul_val = 1
+#         for num in num_list:
+#             mul_val *= num
+#
+#         return mul_val
+
+
+
+
+
+8번 다른 풀이
 def solution(num_list):
-    if len(num_list) >= 11:
-        return sum(num_list)
+    return  sum ( l )  if  len ( l ) >= 11  else  reduce ( lambda  a , b :  a * b ,  l )
 
-    else:
-        mul_val = 1
-        for num in num_list:
-            mul_val *= num
 
-        return mul_val
+def solution(num_list):
+    return  sum ( num_list )  if  len ( num_list ) >= 11  else  prod ( num_list )
+
 
 
 
@@ -114,5 +127,6 @@ if __name__ == '__main__':
     # print(solution('ABC'))
 
     # 8번
-    num_list = [1, 2, 3]
-    print(solution(num_list))
+    # num_list = [1, 2, 3]
+    # print(solution(num_list))
+
