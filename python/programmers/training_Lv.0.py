@@ -1,4 +1,5 @@
 # 프로그래머스 - 코딩기초트레이닝 Lv.0 문제
+from  math  import  prod
 
 
 # 1. 문자열 정수의 합
@@ -86,13 +87,26 @@
 
 
 
-8번 다른 풀이
-def solution(num_list):
-    return  sum ( l )  if  len ( l ) >= 11  else  reduce ( lambda  a , b :  a * b ,  l )
+# 8번 다른 풀이
+# def solution(num_list):
+#     return  sum ( l )  if  len ( l ) >= 11  else  reduce ( lambda  a , b :  a * b ,  l )
+#
+#
+# def solution(num_list):
+#     return  sum ( num_list )  if  len ( num_list ) >= 11  else  prod ( num_list )
 
 
-def solution(num_list):
-    return  sum ( num_list )  if  len ( num_list ) >= 11  else  prod ( num_list )
+
+
+
+
+# 9. 정수 부분 함수(메서드)
+def solution(flo):
+    return int(str(flo).split('.')[0])
+
+
+
+
 
 
 
@@ -127,6 +141,9 @@ if __name__ == '__main__':
     # print(solution('ABC'))
 
     # 8번
-    # num_list = [1, 2, 3]
+    num_list = [1, 2, 3]
     # print(solution(num_list))
 
+    # 9번
+
+    print(solution(70.14))
