@@ -44,9 +44,13 @@
 
 
 
+
+
 # 5. 대문자로 바꾸기
 # def solution(myString):
 #     return myString.upper()
+
+
 
 
 
@@ -56,9 +60,28 @@
 
 
 
+
+
 # 7. 소문자로 변환
-def solution(myString):
-    return myString.lower()
+# def solution(myString):
+#     return myString.lower()
+
+
+
+
+
+# 8. 길이에 따른 연산(배열)
+def solution(num_list):
+    if len(num_list) >= 11:
+        return sum(num_list)
+
+    else:
+        mul_val = 1
+        for num in num_list:
+            mul_val *= num
+
+        return mul_val
+
 
 
 
@@ -88,4 +111,8 @@ if __name__ == '__main__':
     # print(solution(3))
 
     # 7번
-    print(solution('ABC'))
+    # print(solution('ABC'))
+
+    # 8번
+    num_list = [1, 2, 3]
+    print(solution(num_list))
