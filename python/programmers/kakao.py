@@ -141,4 +141,5 @@ if __name__ == '__main__':
 
     # solution(today_01, terms_01, privacies_01)
     # print(solution_02(today_02, terms_02, privacies_02))
+
     solution_02(today_03, terms_03, privacies_03)
