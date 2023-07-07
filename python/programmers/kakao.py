@@ -2,6 +2,8 @@
 
 # 2023 KAKAO BLIND RECRUITMENT
     # 〉 개인정보 수집 유효기간
+
+# 가장 처음 생각한 방법으로 만든 함수.
 def solution(today, terms, privacies):
     answer = []
     today_split_list =today.split('.')
@@ -39,6 +41,7 @@ def solution(today, terms, privacies):
 
 
 # 정확도 올리기 위해 연구 중
+# 날짜를 비교하는 부분의 조건문이 문제가 있다고 생각해서 수정한 함수.
 def solution_01(today, terms, privacies):
     answer = []
     today_split_list = today.split('.')
@@ -79,7 +82,7 @@ def solution_01(today, terms, privacies):
 
 
 
-# n의 범위가 100이하인 걸 파악한 후 수정
+# n의 범위가 100이하인 것을 파악하고 높은 숫자가 나왔을 때 처리하는 부분을 추가한 함수.
 def solution(today, terms, privacies):
     answer = []
     today_split_list =today.split('.')
@@ -123,6 +126,41 @@ def solution(today, terms, privacies):
 
 
 
+# 풀이 영상을 보고 날짜를 모두 일로 바꾸어 비교하는 방법 시도한 함수.
+def turn_to_day(date):
+    y, m, d = map(int, date.split('.'))
+    days = (28 * 12 * y) + (28 * m) + (d)
+
+    return days
+
+
+
+def solution_03(today, terms, privacies):
+    answer = []
+    today_days = turn_to_day(today)
+
+    for i in range(0, len(privacies)):
+        privacies_split_list = privacies[i].split()
+        privacies_days = turn_to_day(privacies_split_list[0])
+
+        for terms_line in terms:
+            terms_split_list = terms_line.split()
+            terms_days = 28 * int(terms_split_list[1])
+
+            if privacies_split_list[1] in terms_line:
+                sum_day = privacies_days + terms_days
+                if sum_day <= today_days:
+                    answer.append(i + 1)
+
+    return answer
+
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
@@ -143,4 +181,8 @@ if __name__ == '__main__':
     # solution(today_01, terms_01, privacies_01)
     # print(solution_02(today_02, terms_02, privacies_02))
 
+# n의 범위에 맞게 수정하였을 때 결과가 잘 나오는지 확인
     # solution_02(today_03, terms_03, privacies_03)
+
+# 프로그래머스에서 정답처리 됨!!
+    solution_03(today_01, terms_01, privacies_01)
