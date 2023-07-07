@@ -79,8 +79,8 @@ def solution_01(today, terms, privacies):
 
 
 
-
-def solution_02(today, terms, privacies):
+# n의 범위가 100이하인 걸 파악한 후 수정
+def solution(today, terms, privacies):
     answer = []
     today_split_list =today.split('.')
 
@@ -101,15 +101,16 @@ def solution_02(today, terms, privacies):
                 elif month >= 10 and month <= 12:
                     privacies_date[1] = month
 
-                month_range = 12
-                plus_year = 1
-                while month_range <= 100:
-                    if month > month_range and month <= month_range * 2:
-                        privacies_date[0] = int(privacies_date[0]) + plus_year
-                        privacies_date[1] = month - month_range * plus_year
+                else:
+                    month_range = 12
+                    plus_year = 1
+                    while month_range <= 100:
+                        if month > month_range and month <= month_range * 2:
+                            privacies_date[0] = int(privacies_date[0]) + plus_year
+                            privacies_date[1] = month - month_range * plus_year
 
-                    month_range += 12
-                    plus_year += 1
+                        month_range += 12
+                        plus_year += 1
 
 
                 if (int(privacies_date[0]) < int(today_split_list[0])) or (int(privacies_date[0]) == int(today_split_list[0]) and int(privacies_date[1]) <= int(today_split_list[1]) and int(privacies_date[2]) <= int(today_split_list[2])):
@@ -142,4 +143,4 @@ if __name__ == '__main__':
     # solution(today_01, terms_01, privacies_01)
     # print(solution_02(today_02, terms_02, privacies_02))
 
-    solution_02(today_03, terms_03, privacies_03)
+    # solution_02(today_03, terms_03, privacies_03)
