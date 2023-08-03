@@ -79,8 +79,30 @@ Order by NAME , DATETIME  DESC;
 
 
 
-9. 상위 n개 레코드
+9. 상위 	n개 레코드
 SELECT NAME
 FROM ANIMAL_INS  
 Order by DATETIME
 LIMIT 1;
+
+
+
+
+
+10. 조건에 맞는 회원수 구하기
+- 첫 번째 시도 답안
+SELECT COUNT(20 <= AGE and AGE <= 29)
+FROM USER_INFO  
+WHERE JOINED  LIKE '2021%';
+
+ 
+- 다른 사람 답안
+SELECT COUNT(USER_ID )
+FROM USER_INFO  
+WHERE year(JOINED) =2021 and 20 <= AGE and AGE < 30;
+
+
+- 내 최종 답안
+SELECT COUNT(USER_ID )
+FROM USER_INFO  
+WHERE JOINED LIKE '2021%' and 20 <= AGE and AGE < 30;
