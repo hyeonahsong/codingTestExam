@@ -1,7 +1,7 @@
 <GROUP_BY_programmers_A>
 
 * GROUP BY
-12/16
+14/16
 1. 자동차 종류 별 특정 옵션이 포함된 자동차 수 구하기
 - 아래 방법으로는 안되는지 시도해봤지만 안됐음.
   검색해보니 내가 원하는 방식은 없는 것 같음.
@@ -210,3 +210,15 @@ GROUP BY MONTH , CAR_ID
 HAVING RECORDS > 0
 
 ORDER BY MONTH , CAR_ID DESC;
+
+
+
+
+
+14. 가격대 별 상품 개수 구하기
+SELECT TRUNCATE(PRICE , -4) AS PRICE_GROUP , COUNT(PRODUCT_ID) AS PRODUCTS
+FROM PRODUCT 
+
+GROUP BY PRICE_GROUP
+
+ORDER BY PRICE_GROUP
