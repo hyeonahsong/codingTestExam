@@ -1,7 +1,7 @@
 <GROUP_BY_programmers_A>
 
 * GROUP BY
-14/16
+15/16
 1. 자동차 종류 별 특정 옵션이 포함된 자동차 수 구하기
 - 아래 방법으로는 안되는지 시도해봤지만 안됐음.
   검색해보니 내가 원하는 방식은 없는 것 같음.
@@ -222,3 +222,18 @@ FROM PRODUCT
 GROUP BY PRICE_GROUP
 
 ORDER BY PRICE_GROUP
+
+
+
+
+
+15. 년, 월, 성별 별 상품 구매 회원 수 구하기
+SELECT YEAR(O.SALES_DATE) AS YEAR , MONTH(O.SALES_DATE) AS MONTH , U.GENDER , COUNT(DISTINCT U.USER_ID) AS USERS
+FROM ONLINE_SALE  O
+
+INNER JOIN USER_INFO U
+USING(USER_ID)
+WHERE GENDER IS NOT NULL
+GROUP BY YEAR , MONTH , GENDER
+
+ORDER BY YEAR , MONTH , GENDER
